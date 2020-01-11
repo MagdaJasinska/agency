@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(53, 50, 50);
+   
+}
+
+ul{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 10fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 15px 30px;
+
+}
+
+
+li {
+    list-style: none;
+    text-transform: uppercase;
+    color: white;
+    width: auto;
+    font-weight: bold;
+    text-align: center;
+    line-height: normal;
+     padding: 0 15px;  
+}
+
+.logo {
+    color: yellow;
+    font-size: 20px;
+    font-family: 'Lobster';
+    text-transform: capitalize;
+    font-family: 'Pacifico', cursive;
+    text-align: left;
+    }
