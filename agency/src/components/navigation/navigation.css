@@ -1,19 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 nav {
-    background-color: rgb(53, 50, 50);
-   
+
+    position: fixed;
+    font-size: 20px;
+    transition: ease 0.3s;
+    padding: 15px 0;
 }
 
-ul{
+.scroll_action {
+    background-color: rgb(53, 50, 50);
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+
+ul {
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: 10fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
-    padding: 15px 30px;
+    padding: 0 30px;
 
 }
 
@@ -26,14 +36,24 @@ li {
     font-weight: bold;
     text-align: center;
     line-height: normal;
-     padding: 0 15px;  
+    padding: 0 15px;
+}
+
+li:hover {
+    color: yellow;
+    cursor: pointer;
 }
 
 .logo {
     color: yellow;
-    font-size: 20px;
     font-family: 'Lobster';
     text-transform: capitalize;
     font-family: 'Pacifico', cursive;
     text-align: left;
-    }
+    font-size: 25px;
+}
+
+.scroll_action_logo {
+    font-size: 18px;
+    padding: 10px 0;
+}
