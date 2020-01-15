@@ -4,6 +4,7 @@ import Services from './components/body/services/services';
 
 import './App.css';
 import Navigation from './components/navigation/navigation';
+import Portfolio from './components/body/portfolio/portfolio';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navigation/>  
       <Header/>
       <Services/>
+      <Portfolio/>
     </div>
   );
 }
