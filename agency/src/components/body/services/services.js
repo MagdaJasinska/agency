@@ -1,7 +1,7 @@
 import React from 'react';
 import './services.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart, faLaptop, faLock } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart, faLaptop, faLock, faCircle } from '@fortawesome/free-solid-svg-icons';
 
 
 class Services extends React.Component {
@@ -13,22 +13,32 @@ class Services extends React.Component {
                 
                 <div className="services_content">
                     <div className="service_item"> 
-                     <FontAwesomeIcon icon={faShoppingCart} />
-                    <p className="item_title">E-Commerce</p>
-                    <p className="item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
+                        <span className="item_icon_container">
+                            <FontAwesomeIcon className="item_icon cart" icon={faShoppingCart} />
+                            <FontAwesomeIcon className="item_circle" icon={faCircle} />
+                        </span>
+                        <p className="item_title">E-Commerce</p>
+                        <p className="item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+
 
                     <div className="service_item">
-                    <FontAwesomeIcon icon={faLaptop} /> 
-                    <p className="item_title">Responsive Design</p>
-                    <p className="item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
+                        <span className="item_icon_container">
+                           <FontAwesomeIcon className="item_icon laptop" icon={faLaptop} /> 
+                           <FontAwesomeIcon className="item_circle" icon={faCircle} />
+                        </span>
+                         <p className="item_title">Responsive Design</p>
+                         <p className="item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
 
                     <div className="service_item">
-                    <FontAwesomeIcon icon={faLock} />
-                    <p className="item_title">Web Security</p>
-                    <p className="item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>        
+                        <span className="item_icon_container ">
+                                <FontAwesomeIcon className="item_icon lock" icon={faLock} />
+                            <FontAwesomeIcon className="item_circle" icon={faCircle} />
+                        </span>
+                       <p className="item_title">Web Security</p>
+                       <p className="item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                  </div>        
                 
                 </div>
             </div>

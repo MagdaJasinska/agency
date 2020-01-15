@@ -9,6 +9,7 @@ nav {
     font-size: 20px;
     transition: ease 0.3s;
     padding: 15px 0;
+    z-index: 1;
 }
 
 .scroll_action {
