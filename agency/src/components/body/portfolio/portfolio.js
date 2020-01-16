@@ -1,6 +1,8 @@
 import React from 'react';
 import './portfolio.css';
 import ReactHtmlParser from 'react-html-parser';
+import data from './data.json'
+
 
 class Portfolio extends React.Component {
 
@@ -8,44 +10,28 @@ class Portfolio extends React.Component {
         super(props)
         this.state = {
             error: null,
-            items: []
+            items: data
         };
-    }
-
-    componentDidMount () {
-        fetch("https://randomuser.me/api/?results=6")
-        .then(res => res.json())
-        .then( 
-            (result) => {
-
-                console.log(result)
-
-              this.setState({
-                items: result.results
-              })
-            },
-           (error) => {
-              this.setState({
-                error: error
-              })
-            }
-           
-        )
-        
     }
 
     render () {
         
-        let items = ""
+        let itemsHtml = "";
 
-       
+        
+
         this.state.items.forEach( (item) => {
-            console.log(item.url)
-            items += `<div class="portfolio_item"> 
-                        <img class="portfolio_img" src="${item.picture.large}" alt="portfolio image"/>
+          
+          
+            itemsHtml += `<div class="portfolio_item"> 
+                        <div class="portfolio_container">
+                            <div class="img_overlay"> </div>
+                            <img class="portfolio_img" src="${item.url_thumbnail}" alt="portfolio image"/>
+                            <span class=item_icon_plus>+</span>
+                        </div>
                         <div class="img_text">
-                            <p class="img_title">Threads</p>
-                            <p class="img_description">Ilustration</p>
+                            <p class="img_title">${item.client}</p>
+                            <p class="img_description">${item.category}</p>
                         </div>
                     </div>`
         })
@@ -57,7 +43,9 @@ class Portfolio extends React.Component {
                 <p className="portfolio_subtitle">Lorem ipsum dolor sit amet consectetur</p>
                 
                 <div className="portfolio_content">
-                  { ReactHtmlParser (items) }
+                  {
+                    ReactHtmlParser(itemsHtml)
+                  }
                 </div>
               </div>
             </div>
