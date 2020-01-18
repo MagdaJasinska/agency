@@ -67,7 +67,8 @@
 
 .portfolio_img {
     width: 100%;
-   }
+    vertical-align: top;
+}
 
 .item_icon_plus {
     position: absolute;
