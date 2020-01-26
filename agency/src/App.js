@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/header/header';
 import Services from './components/body/services/services';
+import About from './components/body/about/about'
 
 import './App.css';
 import Navigation from './components/navigation/navigation';
@@ -13,6 +14,7 @@ function App() {
       <Header/>
       <Services/>
       <Portfolio/>
+      <About/>
     </div>
   );
 }
