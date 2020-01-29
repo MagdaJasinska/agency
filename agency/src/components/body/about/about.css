@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .about_container {
     max-width: 1024px;
     padding-right: 15px;

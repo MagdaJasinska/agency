@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from './components/header/header';
 import Services from './components/body/services/services';
-import About from './components/body/about/about'
+import About from './components/body/about/about';
+import Footer from './components/footer/footer';
 
 import './App.css';
 import Navigation from './components/navigation/navigation';
@@ -15,6 +16,7 @@ function App() {
       <Services/>
       <Portfolio/>
       <About/>
+      <Footer/>
     </div>
   );
 }

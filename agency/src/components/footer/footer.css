@@ -1,0 +1,88 @@
+.footer_bgc {
+    background-color: #212529;
+}
+
+.footer_bgc_map {
+    background-image: url("/images/footer/map-image.png");
+    max-width: 1300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.footer_contact {
+    padding: 60px 15px 40px 15px;
+}
+
+.footer_contact_title {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.footer_contact_subtitle {
+    color: #6c757d;
+    font-style: italic;
+}
+
+.footer_form {
+    max-width: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_form_left {
+    width: 50%;
+    padding-right: 15px;
+}
+
+.footer_form_right {
+    width: 50%;
+    padding-left: 15px;
+}
+
+.footer_send_message {
+    width: 100%;
+    margin: 30px 5px;
+}
+
+.form_group {
+    padding-bottom: 8px;
+   
+}
+
+.form_group.textarea {
+  height: 100%;
+}
+
+.form_field.textarea {
+    height: 100%;
+
+}
+
+.form_field {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: unset;
+}
+
+.footer_btn{
+    background-color: #fed136;
+    border:unset;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.footer_btn:hover {
+    background-color: #ecbe16;
+}
