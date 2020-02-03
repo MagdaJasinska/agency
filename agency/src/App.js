@@ -7,7 +7,7 @@ import Footer from './components/footer/footer';
 import './App.css';
 import Navigation from './components/navigation/navigation';
 import Portfolio from './components/body/portfolio/portfolio';
-import Hello from './components/navigation/hello';
+import Hello from './components/body/hello/hello';
 
 function App() {
   return (
