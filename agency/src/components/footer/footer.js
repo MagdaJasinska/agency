@@ -1,7 +1,8 @@
 import React from 'react';
 import './footer.css';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import {faCircle, faFacebook} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faFacebookF, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+
 
 class Footer extends React.Component {
 
@@ -20,10 +21,10 @@ state= {
  }
 }
  messages = {
-    username_incorrect: 'Please enter your name, spaces are not allowed',
-    email_incorrect: 'Please enter your email address with @',
-    tel_incorrect: 'Please enter your phone number, at least 9 numbers',
-    message_incorrect: 'Please enter a message',
+    username_incorrect: 'Please enter your name.',
+    email_incorrect: 'Please enter your email with @.',
+    tel_incorrect: 'Please enter your phone number.',
+    message_incorrect: 'Please enter a message.',
  }
 
  handleChange = (e) => {
@@ -77,7 +78,7 @@ state= {
        let message = false;
        let correct = false;
 
-        if (this.state.username.length > 1 && this.state.username.indexOf(' ') === -1) {
+        if (this.state.username.length > 1) {
            username = true;
         }
 
@@ -85,7 +86,7 @@ state= {
            email = true;
         }
 
-        if (this.state.tel.length > 9 ) {
+        if (this.state.tel.length > 1 ) {
            tel = true;
         }
 
@@ -157,15 +158,20 @@ state= {
        <div className="footer_inf_container">
           <div className="footer_copyright"><p className="footer_copyright_txt">Copyright © Your Website 2020</p></div>
           <div className="footer_socialsIcons_container"> 
-               {/* <span className="item_icon_container">
-                  <FontAwesomeIcon className="item_icon cart" icon={faFacebook} />
-                  <FontAwesomeIcon className="item_circle" icon={faCircle} />
-               </span> */}
-          </div>
+               <span className="footer_item_icon_container">
+                  <FontAwesomeIcon className="footer_item_icon social" icon={faTwitter} />   
+               </span>
+               <span className="footer_item_icon_container">
+                  <FontAwesomeIcon className="footer_item_icon social" icon={faFacebookF} />
+               </span>
+               <span className="footer_item_icon_container">  
+                  <FontAwesomeIcon className="footer_item_icon social" icon={faLinkedinIn} />
+               </span>
+         </div>
           <div className="footer_quicklinks">
             <p className="footer_link">Privacy Policy</p>
             <p className="footer_link">Terms of Use</p>
-         </div> 
+         </div>
 
          </div>
       </div>
