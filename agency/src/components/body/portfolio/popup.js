@@ -1,5 +1,5 @@
 import React from 'react';
-import './popup.css';
+import './popup.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 

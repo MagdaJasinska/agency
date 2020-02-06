@@ -8,7 +8,7 @@ import Navigation from './components/navigation/navigation';
 import Portfolio from './components/body/portfolio/portfolio';
 import Hello from './components/body/hello/hello';
 
-import './App.css';
+import './App.scss';
 
 
 function App() {

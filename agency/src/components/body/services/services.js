@@ -1,5 +1,5 @@
 import React from 'react';
-import './services.css';
+import './services.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faLaptop, faLock, faCircle } from '@fortawesome/free-solid-svg-icons';
 

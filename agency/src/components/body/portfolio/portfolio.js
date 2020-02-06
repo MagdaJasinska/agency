@@ -1,5 +1,5 @@
 import React from 'react';
-import './portfolio.css';
+import './portfolio.scss';
 import data from './data.json';
 import Popup from './popup';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './hello.css';
+import './hello.scss';
 
 
 class Hello extends React.Component {
