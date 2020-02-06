@@ -5,17 +5,17 @@ import { faShoppingCart, faLaptop, faLock, faCircle } from '@fortawesome/free-so
 
 
 class Services extends React.Component {
-        render() {
-            return (
+    render() {
+        return (
             <div className="services">
                 <p className="services_title">services</p>
                 <p className="services_subtitle">Lorem ipsum dolor sit amet consectetur</p>
-                
+
                 <div className="services_content">
-                    <div className="service_item"> 
-                        <span className="item_icon_container">
-                            <FontAwesomeIcon className="item_icon cart" icon={faShoppingCart} />
-                            <FontAwesomeIcon className="item_circle" icon={faCircle} />
+                    <div className="service_item">
+                        <span className="service_item_icon_container">
+                            <FontAwesomeIcon className="service_item_icon cart" icon={faShoppingCart} />
+                            <FontAwesomeIcon className="service_item_circle" icon={faCircle} />
                         </span>
                         <p className="item_title">E-Commerce</p>
                         <p className="item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
@@ -23,26 +23,26 @@ class Services extends React.Component {
 
 
                     <div className="service_item">
-                        <span className="item_icon_container">
-                           <FontAwesomeIcon className="item_icon laptop" icon={faLaptop} /> 
-                           <FontAwesomeIcon className="item_circle" icon={faCircle} />
+                        <span className="service_item_icon_container">
+                            <FontAwesomeIcon className="service_item_icon laptop" icon={faLaptop} />
+                            <FontAwesomeIcon className="service_item_circle" icon={faCircle} />
                         </span>
-                         <p className="item_title">Responsive Design</p>
-                         <p className="item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <p className="item_title">Responsive Design</p>
+                        <p className="item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
 
                     <div className="service_item">
-                        <span className="item_icon_container ">
-                                <FontAwesomeIcon className="item_icon lock" icon={faLock} />
-                            <FontAwesomeIcon className="item_circle" icon={faCircle} />
+                        <span className="service_item_icon_container ">
+                            <FontAwesomeIcon className="service_item_icon lock" icon={faLock} />
+                            <FontAwesomeIcon className="service_item_circle" icon={faCircle} />
                         </span>
-                       <p className="item_title">Web Security</p>
-                       <p className="item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                  </div>        
-                
+                        <p className="item_title">Web Security</p>
+                        <p className="item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+
                 </div>
             </div>
-            );
+        );
     }
 }
 
