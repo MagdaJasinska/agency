@@ -1,5 +1,11 @@
+@import "./src/vars.scss";
+
+$footer_bgc: #212529;
+$validation_msg: #850505;
+$copyright_color: #212529;
+
 .footer_bgc {
-    background-color: #212529;
+    background-color: $footer_bgc;
 }
 
 .footer_bgc_map {
@@ -17,14 +23,14 @@
 
 .footer_contact_title {
     text-transform: uppercase;
-    color: #fff;
+    color: $white;
     font-weight: bold;
     font-size: 35px;
     margin-bottom: 10px;
 }
 
 .footer_contact_subtitle {
-    color: #6c757d;
+    color: $txt_grey;
     font-style: italic;
 }
 
@@ -58,7 +64,7 @@
 
 .form_group.textarea {
     height: 95%;
-    }
+}
 
 .form_field.textarea {
     height: 100%;
@@ -70,13 +76,12 @@
     padding: 15px;
     border-radius: 5px;
     border: unset;
-    
 }
 
 .validation_message {
     position: absolute;
     display: inline-block;
-    color: rgb(201, 40, 40);
+    color: $validation_msg;
     font-size: 14px;
     width: 100%;
     text-align: left;
@@ -85,11 +90,11 @@
 }
 
 .footer_btn {
-    background-color: #fed136;
+    background-color: $yellow;
     border: unset;
     border-radius: 5px;
     cursor: pointer;
-    color: #fff;
+    color: $white;
     padding: 15px;
     text-transform: uppercase;
     font-weight: 800;
@@ -97,7 +102,7 @@
 }
 
 .footer_btn:hover {
-    background-color: #ecbe16;
+    background-color: $yellow_hover;
 }
 
 .footer_inf {
@@ -110,7 +115,6 @@
     display: flex;
 }
 
-
 .footer_copyright {
     width: 33.33333%;
     display: flex;
@@ -120,9 +124,8 @@
 
 .footer_copyright_txt {
     font-size: 12px;
-    color: #212529;
+    color:$copyright_color
 }
-
 
 .footer_quicklinks {
     width: 33.33333%;
@@ -133,13 +136,13 @@
 
 .footer_link {
     font-size: 12px;
-    color: #ffc107;
+    color: $yellow;
     display: inline-block;
     padding: 3px 10px;
 }
 
 .footer_link:hover {
-    color: #f0be0c;
+    color: $yellow_hover;
     text-decoration: underline;
     cursor: pointer;
 }

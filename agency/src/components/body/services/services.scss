@@ -1,3 +1,5 @@
+@import "./src/vars.scss";
+
 .services {
     max-width: 1024px;
     margin: 70px auto;
@@ -14,7 +16,7 @@
 
 .services_subtitle {
     font-style: italic;
-    color: #6c757d;
+    color: $txt_grey;
     margin-bottom: 75px;
 }
 
@@ -23,7 +25,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 25px;
 }
-
 
 .service_item_icon_container {
     position: relative;
@@ -35,20 +36,18 @@
 
 .service_item_circle {
     font-size: 150px;
-    color: #ffc107;
+    color: $yellow;
     z-index: -1;
     position: absolute;
     left: calc(50% - 75px);
 }
 
-
 .service_item_icon {
     font-size: 60px;
-    color: #fff;
+    color: $white;
     margin-bottom: 35px;
     z-index: 1;
     position: absolute;
-
 }
 
 .service_item_icon.lock {
@@ -60,7 +59,6 @@
     left: calc(50% - 35px);
     bottom: calc(50% - 67px);
 }
-
 
 .service_item_icon.laptop {
     left: calc(50% - 37px);
@@ -74,7 +72,7 @@
 }
 
 .item_description{
-  color: #6c757d;
+  color: $txt_grey;
 }
 
 

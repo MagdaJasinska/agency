@@ -9,7 +9,7 @@ class Header extends React.Component {
 
           <div className="intro_text">welcome to our studio</div>
           <div className="lead_in">it`s nice to meet you</div>
-          <a href="/" className="btn_intro">Tell me more</a>
+          <a href="#" className="btn_intro">Tell me more</a>
         </div>
       </header>
     )

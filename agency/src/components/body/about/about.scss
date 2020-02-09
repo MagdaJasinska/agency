@@ -1,3 +1,5 @@
+ @import "./src/vars.scss";
+
 .about_container {
     max-width: 1024px;
     padding-right: 15px;
@@ -23,7 +25,7 @@
 .about_description {
     font-size: 15px;
     font-style: italic;
-    color: #6c757d;
+    color: $txt_grey;
     margin-bottom: 70px;
 }
 
@@ -39,7 +41,7 @@
     left: 50%;
     width: 2px;
     content:' ';
-    background-color: #9c9ea1;
+    background-color: $timeline_color;
     z-index: -1;
 }
 
@@ -53,13 +55,12 @@
     height: 170px;
     position: absolute;
     left: calc(50% - 85px);
-
 }
 
 .timeline_image_circle {
     border-radius: 50%;
     width: 100%;
-    border: 3px solid #9c9ea1;
+    border: 3px solid $timeline_color;
 }
 
 .timeline_description {
@@ -89,7 +90,7 @@
 }
 
 .timeline_more {
-    color: #6c757d;
+    color: $txt_grey;
     font-size: 15px;
     text-align: justify;
 }
@@ -102,6 +103,6 @@
     font-size: 20px;
     line-height: 30px;
     font-weight: bold;
-    background-color: #fed136;
+    background-color: $yellow;
     text-transform: capitalize;
 }

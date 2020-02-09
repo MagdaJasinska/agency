@@ -1,5 +1,9 @@
+@import "./src/vars.scss";
+
+$hello_bgc: #8c9497;
+
 .hello {
-    background-color: #8c9497;
+    background-color: $hello_bgc;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -10,6 +14,6 @@
 
 .hello_txt {
     font-size: 150px;
-    color: #fff;
+    color: $white;
     font-weight: bold;
 }

@@ -1,4 +1,4 @@
-
+$scroll_action_color: rgb(53, 50, 50);
 
 nav {
     position: fixed;
@@ -11,7 +11,7 @@ nav {
 }
 
 .scroll_action {
-    background-color: rgb(53, 50, 50);
+    background-color: $scroll_action_color;
     font-size: 15px;
     padding: 10px 0;
 }

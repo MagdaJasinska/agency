@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400i&display=swap');
-
+@import "./src/vars.scss";
 
 * {
   margin: 0;
@@ -31,13 +31,13 @@ code {
   font-size: 15px;
   color: #fff;
   margin: 7px;
-  background-color: rgb(48, 47, 47);
-  border: 10px solid rgb(48, 47, 47);
+  background-color: $social_icon_color;
+  border: 10px solid $social_icon_color;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .item_icon.social:hover {
-  background-color: #f0be0c;
-  border: 10px solid #f0be0c;
+  background-color: $yellow_hover;
+  border: 10px solid $yellow_hover;
 }

@@ -7,7 +7,7 @@ class Hello extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isVisible: false
+      isVisible: true
     }
   }
 
@@ -25,7 +25,7 @@ class Hello extends React.Component {
       this.setState({
         isVisible: false
       });
-    }, 2300);
+    }, 1500);
   }
 
 
