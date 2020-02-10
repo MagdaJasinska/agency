@@ -24,8 +24,8 @@ class Popup extends React.Component {
                 <div className="popup_container">
                     <FontAwesomeIcon className="icon_close" onClick={this.hidePopup} icon={faTimes} />
                     <div className="popup_content">
-                        <p className="popup_title">{this.props.activeItem.title}</p>
-                        <p className="popup_subtitle">{this.props.activeItem.subtitle}</p>
+                        <p className="section_title">{this.props.activeItem.title}</p>
+                        <p className="section_subtitle">{this.props.activeItem.subtitle}</p>
                         <img className="popup_img" src={this.props.activeItem.url_full} alt={this.props.activeItem.category} />
                         <p className="popup_description">{this.props.activeItem.description}</p>
                         <div className="popup_details">

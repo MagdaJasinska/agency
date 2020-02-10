@@ -7,9 +7,9 @@ import { faShoppingCart, faLaptop, faLock, faCircle } from '@fortawesome/free-so
 class Services extends React.Component {
     render() {
         return (
-            <div className="services">
-                <p className="services_title">services</p>
-                <p className="services_subtitle">Lorem ipsum dolor sit amet consectetur</p>
+            <div className="section_container">
+                <p className="section_title">services</p>
+                <p className="section_subtitle">Lorem ipsum dolor sit amet consectetur</p>
 
                 <div className="services_content">
                     <div className="service_item">

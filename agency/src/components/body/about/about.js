@@ -4,10 +4,10 @@ import './about.scss';
 class About extends React.Component {
     render() {
         return (
-            <div className="about_container">
-                <div className="about_introduction">
-                    <p className="about_title">about</p>
-                    <p className="about_description">Lorem ipsum, Lorem ipsum</p>
+            <div className="section_container">
+                <div className="section_introduction">
+                    <p className="section_title">about</p>
+                    <p className = "section_subtitle" > Lorem ipsum, Lorem ipsum </p>
                 </div>
 
                 <div className="timeline">

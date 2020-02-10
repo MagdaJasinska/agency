@@ -62,16 +62,15 @@ class Team extends React.Component {
 
         return (
 
-            <div className="team_section">
-                <div className="team_container">
-                    <div className="team_introduction">
-                        <p className="team_tittle">our amazing team</p>
-                        <p className="team_subtittle">Lorem ipsum dolor sit amet consectetur.</p>
+            <div className="section_bgc">
+                <div className="section_container">
+                    <div className="section_introduction">
+                        <p className="section_title">our amazing team</p>
+                        <p className="section_subtitle">Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
                     <div className="team_members_section">
                         {itemsHtml}
                     </div>
-
                 </div>
             </div>
 

@@ -1,33 +1,5 @@
  @import "./src/vars.scss";
 
-.about_container {
-    max-width: 1024px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 100px;
-}
-
-.about_introduction {
-    display: block;
-    padding: 10px;
-    text-align: center;
-}
-
-.about_title {
-    font-size: 40px;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.about_description {
-    font-size: 15px;
-    font-style: italic;
-    color: $txt_grey;
-    margin-bottom: 70px;
-}
 
 .timeline {
     position: relative;

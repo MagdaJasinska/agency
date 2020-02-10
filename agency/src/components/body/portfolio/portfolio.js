@@ -54,16 +54,17 @@ class Portfolio extends React.Component {
         });
 
         return (
-            <div className="section">
-                <div className="portfolio">
-                    <p className="portfolio_title">portfolio</p>
-                    <p className="portfolio_subtitle">Lorem ipsum dolor sit amet consectetur</p>
-
+            <div className="section_bgc">
+              <div className = "section_container" >
+                <div className="section_introduction">
+                    <p className="section_title">portfolio</p>
+                    <p className="section_subtitle">Lorem ipsum dolor sit amet consectetur</p>
                     <div className="portfolio_content">
                         {itemsHtml}
                     </div>
-                </div>
-                <Popup activeItem={this.state.currentItem} />
+                 </div>
+              </div>
+              <Popup activeItem={this.state.currentItem} />
             </div>
 
         )

@@ -25,7 +25,7 @@ class Hello extends React.Component {
       this.setState({
         isVisible: false
       });
-    }, 1500);
+    }, 0);
   }
 
 

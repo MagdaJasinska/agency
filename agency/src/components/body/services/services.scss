@@ -1,25 +1,5 @@
 @import "./src/vars.scss";
 
-.services {
-    max-width: 1024px;
-    margin: 70px auto;
-    padding-bottom: 50px;
-}
-
-.services_title {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 40px;
-    font-family: Arial;
-    margin-bottom: 11px;
-}
-
-.services_subtitle {
-    font-style: italic;
-    color: $txt_grey;
-    margin-bottom: 75px;
-}
-
 .services_content{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
