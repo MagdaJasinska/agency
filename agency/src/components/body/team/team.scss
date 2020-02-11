@@ -8,13 +8,21 @@
     margin: 0 auto;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: $bp_mobile) {
+        flex-wrap: wrap;
+    }
 }
 
 .team_member {
-    flex: 33.333333%;
-    max-width: 27%;
+    width: 33.3333333%;
     position: relative;
     padding: 0 15px;
+
+    @media (max-width: $bp_mobile) {
+        width: 100%;
+        margin-bottom: 50px;
+    }
 }
 
 .team_member_image {
@@ -23,6 +31,11 @@
     border: 8px solid rgba(0, 0, 0, .1);
     border-radius: 50%;
     vertical-align: middle;
+
+    @media (max-width: $bp_mobile) {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 .team_member_name {
@@ -30,6 +43,10 @@
     text-transform: capitalize;
     font-size: 20px;
     font-weight: bold;
+
+    @media (max-width: $bp_mobile) {
+        font-size: 30px;
+    }
 }
 
 .team_member_email {
@@ -37,4 +54,8 @@
     font-size: 13px;
     color: $txt_grey;
     margin-bottom: 10px;
+
+    @media (max-width: $bp_mobile) {
+        font-size: 20px;
+    }
 }

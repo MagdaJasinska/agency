@@ -4,6 +4,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 25px;
+
+     @media (max-width: $bp_mobile) {
+         grid-template-columns: 1fr;
+     }
 }
 
 .service_item_icon_container {
@@ -53,6 +57,10 @@
 
 .item_description{
   color: $txt_grey;
+
+   @media (max-width: $bp_mobile) {
+     font-size: 21px;
+    }
 }
 
 
