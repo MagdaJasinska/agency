@@ -110,7 +110,7 @@ class Footer extends React.Component {
 
    render() {
       return (
-         <div className="footer_container">
+         <div className="footer_container" id="contact">
             <div className="footer_bgc">
                <div className="footer_bgc_map">
                   <div className="footer_contact">

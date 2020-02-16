@@ -25,12 +25,15 @@ ul {
     align-items: center;
     max-width: 1100px;
     margin: auto;
-  }
-
+}
 
 li {
     list-style: none;
+}
+
+.nav_link {
     text-transform: uppercase;
+    text-decoration: none;
     color: white;
     width: auto;
     font-weight: bold;
@@ -39,9 +42,13 @@ li {
     padding: 0 15px;
 }
 
-li:hover {
-    color: yellow;
+.nav_link:hover {
+    color: $yellow_hover;
     cursor: pointer;
+}
+
+li.active .nav_link {
+    color: $yellow_hover;
 }
 
 .logo {

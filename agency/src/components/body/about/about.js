@@ -4,7 +4,7 @@ import './about.scss';
 class About extends React.Component {
     render() {
         return (
-            <div className="section_container">
+            <div className="section_container" id="about">
                 <div className="section_introduction">
                     <p className="section_title">about</p>
                     <p className = "section_subtitle" > Lorem ipsum, Lorem ipsum </p>

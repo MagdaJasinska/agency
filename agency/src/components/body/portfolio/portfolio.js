@@ -55,7 +55,7 @@ class Portfolio extends React.Component {
 
         return (
             <div className="section_bgc">
-              <div className = "section_container" >
+              <div className = "section_container" id="portfolio">
                 <div className="section_introduction">
                     <p className="section_title">portfolio</p>
                     <p className="section_subtitle">Lorem ipsum dolor sit amet consectetur</p>
