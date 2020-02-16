@@ -1,5 +1,7 @@
 import React from 'react';
 import './navigation.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars} from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -12,6 +14,7 @@ class Navigation extends React.Component {
         scrollAbout: false,
         scrollTeam: false,
         scrollContact: false,
+        menu: false,
     }
 
     componentDidMount() {
@@ -24,9 +27,15 @@ class Navigation extends React.Component {
         window.addEventListener('scroll', this.colorScroll);
     }
 
+    toggleMenu = () => {
+        let menuList = document.querySelector('.menu');
+
+        menuList.classList.toggle("menu_vissible")
+    }
+
     handleScroll = () => {
         const lastScrollY = window.scrollY
-        if (lastScrollY >= 120) {
+        if (lastScrollY >= 120 && window.innerWidth > 767 ) {
             this.setState({
                 scrollAction: true
             });
@@ -94,12 +103,12 @@ class Navigation extends React.Component {
     render() {
         return (
             < nav className={
-                this.state.scrollAction ? 'scroll_action' : null
+                this.state.scrollAction ? 'nav_container scroll_action' : 'nav_container'
             }>
-                <ul>
-                    <li className={
+            <div className={
                         this.state.scrollAction ? 'logo scroll_action_logo' : 'logo'
-                    }> Company logo </li>
+                    }> Company logo </div>
+                <ul className="menu">
                     <li className={
                         this.state.scrollServices ? 'active' : ''
                     }>
@@ -126,6 +135,9 @@ class Navigation extends React.Component {
                         <a className="nav_link" href="#contact">Contact</a>
                     </li>
                 </ul>
+                <div className="hamburger_container">
+                    <FontAwesomeIcon className="hamburger_icon" icon={faBars} onClick={() => this.toggleMenu()} />
+                </div>
             </nav>
         );
     }
